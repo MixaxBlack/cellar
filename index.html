@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Private Access</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="portal" id="portal">
+    <audio id="champagneSound" src="sounds/champagne.mp3" preload="auto"></audio>
+
+    <section class="panel beer" data-panel="beer">
+      <img class="layer art-img" src="assets/beer-art.jpg" alt="">
+      <img class="layer photo-img" src="assets/beer-photo.jpg" alt="">
+      <div class="panel-scrim"></div>
+      <div class="panel-label">
+        <span data-i18n="beerTitle">Craft Beer</span>
+        <strong data-i18n="beerLead">Best Craft Beers From Around The World</strong>
+        <small data-i18n="beerText">Selected beers from independent breweries. Unique flavors, rare styles and limited releases.</small>
+      </div>
+    </section>
+
+    <section class="panel port" data-panel="port">
+      <img class="layer art-img" src="assets/port-art.jpg" alt="">
+      <img class="layer photo-img" src="assets/port-photo.jpg" alt="">
+      <div class="panel-scrim"></div>
+      <div class="panel-label">
+        <span data-i18n="portTitle">Port Wine</span>
+        <strong data-i18n="portLead">History. Tradition. Noble Taste.</strong>
+        <small data-i18n="portText">Authentic port wines aged in oak barrels. Rich aromas and centuries-old traditions.</small>
+      </div>
+    </section>
+
+    <section class="panel cigars" data-panel="cigars">
+      <img class="layer art-img" src="assets/cigars-art.jpg" alt="">
+      <img class="layer photo-img" src="assets/cigars-photo.jpg" alt="">
+      <div class="panel-scrim"></div>
+      <div class="panel-label">
+        <span data-i18n="cigarsTitle">Fine Spirits & Cigars</span>
+        <strong data-i18n="cigarsLead">The Art Of Indulgence</strong>
+        <small data-i18n="cigarsText">Premium hand-rolled cigars, exclusive cognacs, whiskies and rums.</small>
+      </div>
+    </section>
+
+    <section class="login-card" aria-label="Authorization">
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang="en">🇬🇧 EN</button>
+        <span>·</span>
+        <button type="button" class="lang-btn" data-lang="ka">🇬🇪 KA</button>
+      </div>
+      <form id="loginForm" novalidate>
+        <input id="emailInput" type="text" placeholder="Email" autocomplete="email" required />
+        <input id="passwordInput" type="password" placeholder="Password" autocomplete="current-password" required />
+        <button id="accessButton" type="submit">Access</button>
+      </form>
+      <div id="loginError" class="login-error" role="alert"></div>
+      <a id="requestAccess" class="request-access" href="mailto:sales@bestdecisiondelivery.com">Contact us</a>
+    </section>
+
+    <footer class="footer-note">
+      <span data-i18n="footerTitle">Private club for true connoisseurs</span>
+      <small data-i18n="footerText">Access by invitation only</small>
+    </footer>
+  </main>
+
+    <div id="authModal" class="auth-modal" aria-hidden="true">
+      <div class="auth-modal-card" role="dialog" aria-modal="true" aria-labelledby="authModalTitle">
+        <button id="authModalClose" class="auth-modal-close" type="button" aria-label="Close">×</button>
+        <h3 id="authModalTitle"></h3>
+        <p id="authModalText"></p>
+        <a id="authModalEmail" href="mailto:info@bestdecisiondelivery.com">info@bestdecisiondelivery.com</a>
+      </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
