@@ -20,7 +20,7 @@ button,input{font:inherit}
 .panel::before{content:'';position:absolute;inset:0;z-index:4;pointer-events:none;background:linear-gradient(115deg,transparent 0%,rgba(255,255,255,.025) 35%,rgba(235,210,145,.15) 50%,rgba(255,255,255,.025) 65%,transparent 100%);transform:translateX(-135%);transition:transform 1000ms ease}
 .panel.is-active::before{transform:translateX(135%)}
 
-.panel-label{position:absolute;left:42px;right:42px;bottom:48px;z-index:5;text-align:center;opacity:0;transform:translateY(18px);pointer-events:none;transition:opacity 450ms ease,transform 450ms ease}
+.panel-label{position:absolute;left:42px;right:42px;bottom:80px;z-index:5;text-align:center;opacity:0;transform:translateY(18px);pointer-events:none;transition:opacity 450ms ease,transform 450ms ease}
 .panel.is-active .panel-label,.panel:hover .panel-label{opacity:1;transform:translateY(-6px)}
 .panel-label span{display:block;font-family:'Cinzel',Georgia,serif;font-size:25px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;color:#f3e4bd;text-shadow:0 10px 26px rgba(0,0,0,.82)}
 .panel-label strong{display:block;margin-top:12px;font-size:14px;font-weight:400;color:rgba(255,255,255,.78);letter-spacing:.04em}
