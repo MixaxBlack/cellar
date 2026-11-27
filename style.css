@@ -210,3 +210,8 @@ html[lang="ka"] .panel-label small {
 .login-error {
   display: none !important;
 }
+
+/* Compact, keyboard-accessible language switch. */
+.lang-switch { flex-wrap: wrap; gap: 2px 7px; }
+.lang-switch .lang-btn { min-height: 24px; }
+.lang-switch .lang-btn:focus-visible { outline: 2px solid #d7b86b; outline-offset: 2px; }
